@@ -33,7 +33,6 @@ var meteorc;
                 meteora = new meteora();
                 meteorb = new meteorb();
                 meteorc = new meteorc();
-                //sound.play()
             }
 
             function draw(){
@@ -50,7 +49,6 @@ var meteorc;
                 meteorc.update();
                 if (keyIsDown(38)){
                     jumper.up();
-                    //sound.play()
                 }
             }
 
