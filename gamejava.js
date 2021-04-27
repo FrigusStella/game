@@ -18,9 +18,10 @@ var highscore = localStorage.getItem("highscore");
 var meteora;
 var meteorb;
 var meteorc;
-    function preload(){
-        sound = loadSound('bonus.mp3');
-    }
+    //this dont work im mad
+    //function preload(){
+        //sound = loadSound('bonus.mp3');
+    //}
 
             function setup(){
                 createCanvas(windowWidth,windowHeight);
@@ -32,7 +33,7 @@ var meteorc;
                 meteora = new meteora();
                 meteorb = new meteorb();
                 meteorc = new meteorc();
-                sound.play()
+                //sound.play()
             }
 
             function draw(){
@@ -151,7 +152,7 @@ var meteorc;
                         this.x = random(25,vw-25);
                         this.y = random(100,vh-25);
                         score += 1;
-                        sound.play();
+                        //sound.play();
                     }
                 }
             }
