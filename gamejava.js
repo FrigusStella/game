@@ -19,9 +19,9 @@ var meteora;
 var meteorb;
 var meteorc;
     //this dont work im mad
-    //function preload(){
-        //sound = loadSound('bonus.mp3');
-    //}
+    function preload(){
+       sound = loadSound('bonus.mp3');
+    }
 
             function setup(){
                 createCanvas(windowWidth,windowHeight);
@@ -50,7 +50,7 @@ var meteorc;
                 meteorc.update();
                 if (keyIsDown(38)){
                     jumper.up();
-                    sound.play()
+                    //sound.play()
                 }
             }
 
@@ -152,7 +152,7 @@ var meteorc;
                         this.x = random(25,vw-25);
                         this.y = random(100,vh-25);
                         score += 1;
-                        //sound.play();
+                        sound.play();
                     }
                 }
             }
